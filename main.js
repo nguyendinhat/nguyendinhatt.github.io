@@ -1,5 +1,6 @@
 const socket =io('https://stream-ryanstudio.herokuapp.com');
 $("#signup").show();
+
 $("#chat").hide();
 socket.on("ds-online",arrUserInfo =>{
 	$("#chat").show();
@@ -28,6 +29,8 @@ function playStream(idVideoTag, stream) {
     video.srcObject = stream;
     video.play();
 }
+
+
 // openStream().then(stream => playStream('localStream',stream))
 // alert("active");
 // var peer = new Peer({key: 'rnaehns0xoe0zfr'});

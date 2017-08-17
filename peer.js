@@ -13,7 +13,7 @@ var Negotiator = require('./negotiator');
 var Reliable = require('reliable');
 
 /**
- * Wraps a DataChannel between two Peers.
+ * Wraps a DataChannel
  */
 function DataConnection(peer, provider, options) {
   if (!(this instanceof DataConnection)) return new DataConnection(peer, provider, options);
